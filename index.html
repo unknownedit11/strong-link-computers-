@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strong Link Computers | Karachi</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;color:#082b4d;background:#fff}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:2px solid #d9edf6}
+.nav{max-width:1180px;margin:auto;display:flex;align-items:center;gap:28px;padding:10px 18px}
+.logo{width:230px;height:70px;object-fit:contain}
+nav{display:flex;gap:22px;align-items:center;flex:1;justify-content:center}
+nav a{font-weight:700;font-size:14px}
+nav a:hover{color:#62b91f}
+.search{border:1px solid #62b91f;border-radius:25px;padding:11px 15px;width:210px}
+.phone{font-weight:700;font-size:13px;white-space:nowrap}
+.hero{background:linear-gradient(110deg,#042d4d 0%,#08658a 46%,#91d322 100%);color:#fff;overflow:hidden}
+.hero-inner{max-width:1180px;margin:auto;min-height:410px;padding:55px 18px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.hero-copy{max-width:590px}
+.badge{display:inline-block;background:#69c21c;padding:9px 14px;border-radius:9px;font-weight:bold;margin-bottom:14px}
+h1{font-size:45px;line-height:1.08;margin-bottom:12px}
+.green{color:#a4df25}
+.hero p{font-size:19px;margin-bottom:25px}
+.specs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:25px}
+.spec{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:12px;border-radius:12px}
+.spec b{display:block}
+.cta{display:inline-block;background:linear-gradient(90deg,#7ed321,#0aaeea);color:#fff;padding:14px 24px;border-radius:30px;font-weight:800}
+.laptop{width:440px;transform:rotate(-4deg);filter:drop-shadow(0 18px 18px rgba(0,0,0,.35))}
+.trust{background:#f7fbfd;border-bottom:1px solid #dcecf2}
+.trust-inner{max-width:1180px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);padding:18px}
+.trust div{text-align:center;padding:8px;border-right:1px solid #d5e6ed;font-weight:700}
+.section{max-width:1180px;margin:auto;padding:45px 18px}
+.title{text-align:center;font-size:30px;margin-bottom:28px}
+.title:after{content:"";display:block;width:75px;height:4px;background:#71c928;margin:10px auto;border-radius:4px}
+.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.cat{border:1px solid #d8e8ee;border-radius:14px;padding:20px 10px;text-align:center;background:#fff;box-shadow:0 4px 12px rgba(0,40,70,.05)}
+.cat .icon{font-size:38px;margin-bottom:10px}
+.cat b{display:block}
+.product{margin-top:35px;border:1px solid #d9e8ee;border-radius:18px;padding:25px;display:grid;grid-template-columns:280px 1fr 280px;gap:28px;align-items:center}
+.product-img{width:100%;height:210px;display:flex;align-items:center;justify-content:center;background:#f2f7fa;border-radius:14px}
+.laptop-art{width:210px;height:125px;background:linear-gradient(135deg,#18242d,#07111a);border:7px solid #1d252c;border-radius:10px 10px 3px 3px;transform:perspective(350px) rotateX(8deg) rotateY(-8deg);position:relative;box-shadow:0 16px 20px #b7c8d0}
+.laptop-art:after{content:"";position:absolute;left:-28px;right:-28px;bottom:-28px;height:24px;background:#b7c2c8;border-radius:3px 3px 12px 12px}
+.screen{position:absolute;inset:8px;background:linear-gradient(135deg,#0b4c82,#183c78 50%,#0b1622);border-radius:3px}
+.details h2{font-size:26px;margin-bottom:15px}
+.details li{list-style:none;padding:7px 0}
+.details li:before{content:"✓";color:#67bd20;font-weight:bold;margin-right:8px}
+.contact{background:#f6fafc;border-radius:15px;padding:22px}
+.contact h3{margin-bottom:14px}
+.contact p{margin:10px 0;line-height:1.5}
+.whatsapp{display:inline-block;background:#19b94b;color:white;padding:12px 18px;border-radius:25px;font-weight:bold;margin-top:8px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+.service{padding:22px;border-radius:15px;background:#f6fafc;border:1px solid #dcebf1}
+.service h3{margin-bottom:8px}
+footer{background:#031e33;color:#fff;margin-top:20px}
+.footer{max-width:1180px;margin:auto;padding:35px 18px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:25px}
+.footer img{width:220px;background:#fff;border-radius:12px}
+.footer p{margin-top:12px;color:#c8d9e4}
+.bottom{text-align:center;border-top:1px solid #28465a;padding:14px;color:#c8d9e4;font-size:13px}
+@media(max-width:900px){
+ nav{display:none}.nav{justify-content:space-between}.search{display:none}
+ .hero-inner{flex-direction:column;text-align:center}.specs{grid-template-columns:repeat(2,1fr)}
+ .laptop{width:320px}.categories{grid-template-columns:repeat(3,1fr)}
+ .product{grid-template-columns:1fr}.contact{margin-top:5px}
+ .trust-inner{grid-template-columns:repeat(2,1fr)}.trust div:nth-child(2){border-right:0}
+ .services{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+ h1{font-size:34px}.categories{grid-template-columns:repeat(2,1fr)}
+ .hero-inner{padding-top:35px}.specs{grid-template-columns:1fr 1fr}
+ .footer{grid-template-columns:1fr}.phone{display:none}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <img src="logo.png" class="logo" alt="Strong Link Computers">
+    <nav>
+      <a href="#home">Home</a><a href="#products">Laptops</a><a href="#products">Desktops</a>
+      <a href="#products">Accessories</a><a href="#services">Services</a><a href="#contact">Contact</a>
+    </nav>
+    <input class="search" placeholder="Search products..." oninput="searchProducts(this.value)">
+    <div class="phone">📞 +92313 8400427</div>
+  </div>
+</header>
+
+<section class="hero" id="home">
+ <div class="hero-inner">
+  <div class="hero-copy">
+   <span class="badge">Premium Business Laptop</span>
+   <h1>Lenovo ThinkPad <span class="green">L13 Yoga</span></h1>
+   <p>Power. Flexibility. Performance.</p>
+   <div class="specs">
+    <div class="spec">⚙️ <b>Core i5</b>10th Gen</div>
+    <div class="spec">💾 <b>8GB RAM</b>DDR4</div>
+    <div class="spec">💿 <b>256GB SSD</b>Fast & Reliable</div>
+    <div class="spec">🖥️ <b>13 inch</b>360° Touch</div>
+    <div class="spec">🔲 <b>FHD 1080</b>1920 × 1080</div>
+   </div>
+   <a class="cta" href="https://wa.me/923362444978?text=Assalam-o-Alaikum%2C%20Lenovo%20ThinkPad%20L13%20Yoga%20ke%20bare%20mein%20maloomat%20chahiye.">🟢 Order on WhatsApp →</a>
+  </div>
+  <div class="laptop-art laptop" style="width:390px;height:240px">
+   <div class="screen"></div>
+  </div>
+ </div>
+</section>
+
+<section class="trust"><div class="trust-inner">
+ <div>🛡️ Genuine Products<br><small>100% Original</small></div>
+ <div>🚚 Fast Delivery<br><small>Karachi & All Pakistan</small></div>
+ <div>🔧 Expert Support<br><small>Sales | Service | Repair</small></div>
+ <div>🏆 Best Prices<br><small>Get More Value</small></div>
+</div></section>
+
+<section class="section" id="products">
+ <h2 class="title">Our Products</h2>
+ <div class="categories">
+  <div class="cat"><div class="icon">💻</div><b>Laptops</b></div>
+  <div class="cat"><div class="icon">🖥️</div><b>Desktops & PCs</b></div>
+  <div class="cat"><div class="icon">⌨️</div><b>Accessories</b></div>
+  <div class="cat"><div class="icon">🖨️</div><b>Printers</b></div>
+  <div class="cat"><div class="icon">🧩</div><b>Components</b></div>
+  <div class="cat"><div class="icon">📡</div><b>Networking</b></div>
+ </div>
+
+ <div class="product" id="productCard">
+  <div class="product-img"><div class="laptop-art"><div class="screen"></div></div></div>
+  <div class="details">
+   <h2>Lenovo ThinkPad L13 Yoga</h2>
+   <ul>
+    <li>Core i5 (10th Gen)</li><li>8GB RAM (DDR4)</li><li>256GB SSD</li>
+    <li>13 inch 360° Touch Screen</li><li>FHD 1080 (1920 × 1080)</li>
+   </ul>
+   <a class="whatsapp" href="https://wa.me/923362444978?text=Lenovo%20ThinkPad%20L13%20Yoga%20ki%20price%20aur%20availability%20batayen.">WhatsApp Inquiry</a>
+  </div>
+  <div class="contact" id="contact">
+   <h3>Strong Link Computers</h3>
+   <p>📍 Karachi Saddar<br>Regal Market Square<br>Office No. 504</p>
+   <p>📞 +92 313 8400427<br>📞 +92 336 2444978</p>
+   <a class="whatsapp" href="https://wa.me/923138400427">Chat on WhatsApp →</a>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="services">
+ <h2 class="title">Our Services</h2>
+ <div class="services">
+  <div class="service"><h3>🔧 Laptop & PC Repair</h3><p>Hardware troubleshooting, Windows installation and general repair.</p></div>
+  <div class="service"><h3>⚡ Upgrades</h3><p>RAM, SSD and other computer upgrades according to your needs.</p></div>
+  <div class="service"><h3>💼 Sales & Support</h3><p>Laptops, desktops, accessories and after-sales support.</p></div>
+ </div>
+</section>
+
+<footer>
+ <div class="footer">
+  <div><img src="logo.png" alt="Strong Link Computers"><p>Your trusted laptop & computer partner in Karachi.</p></div>
+  <div><h3>Quick Links</h3><p>Home<br>Laptops<br>Desktops<br>Accessories<br>Services<br>Contact</p></div>
+  <div><h3>Contact</h3><p>Karachi Saddar, Regal Market Square, Office No. 504</p><p>+92313 8400427<br>+92336 2444978</p></div>
+ </div>
+ <div class="bottom">© 2026 Strong Link Computers. All Rights Reserved.</div>
+</footer>
+
+<script>
+function searchProducts(q){
+  q=q.toLowerCase();
+  const card=document.getElementById('productCard');
+  card.style.display=(!q || 'lenovo thinkpad l13 yoga core i5 10th gen 8gb ram 256gb ssd'.includes(q))?'grid':'none';
+}
+</script>
+</body>
+</html>
